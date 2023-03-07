@@ -119,4 +119,14 @@ details input {
     margin: 0px;
 }
   
+*:disabled + label {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+}
 
+*:disabled:hover {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+}
