@@ -71,7 +71,12 @@ globalThis.app = createApp({
         copy() {
           const css = this.$refs.code1;
           const counterStyle = this.$refs.code2;
-          navigator.clipboard.writeText(css.innerHTML + counterStyle.innerHTML)
+          if (counterStyle!== undefined) {
+            console.log(css.innerHTML + counterStyle.innerHTML)
+            navigator.clipboard.writeText(css.innerHTML + counterStyle.innerHTML)
+          } else {
+            navigator.clipboard.writeText(css.innerHTML)
+          }
         }
     },
 },  "#app");
