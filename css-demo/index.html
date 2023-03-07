@@ -91,8 +91,8 @@
 				</div>
 				<div class="radio-toolbar" id="suffix">
 					<p>Suffix:</p>
-					<input type="radio" id="None" name="prefix" value="none" v-model="suffix" :disabled="disabled">
-					<label for="None">None</label>
+					<input type="radio" id="period" name="prefix" value="period" v-model="suffix" :disabled="disabled">
+					<label for="period">.</label>
 				
 					<input type="radio" id="paren" name="prefix" value="paren" v-model="suffix" :disabled="disabled">
 					<label for="paren">)</label>
@@ -104,7 +104,10 @@
 
 			<details open>
 				<summary>CSS Code</summary>
-				<input type="textarea" :value="css" ref="code" readonly>
+				<div id="code">
+					<p ref="code1">{{css}}</p>
+					<p ref="code2" v-if="counterStyle !== '' ">{{counterStyle}}</p>
+				</div>
 				<button @click="copy">Copy</button>
 			</details>
 		</section>
