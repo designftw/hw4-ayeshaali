@@ -2,9 +2,128 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><!-- CSS Feature Demo name here --></title>
+	<title>CSS List and Counter Style Demo</title>
+	<link
+		rel="stylesheet"
+		href="https://unpkg.com/sakura.css/css/sakura.css"
+	/>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="counterstyles.css"/>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<script src="index.js" type="module"></script>
 </head>
 <body>
+	<h1>CSS List and Counter Style Demo</h1> 
+	<p>List style is a shorthand property that includes position, style, and image of the list bullets.</p>
+	<div id="app">
+		<section id="options">
+			<div class="radio-toolbar" id="position">
+				<p>Position:</p>
+				<input type="radio" id="inside" name="position" value="inside" v-model="position">
+				<label for="inside">inside</label>
+			
+				<input type="radio" id="outside" name="position" value="outside" v-model="position">
+				<label for="outside">outside</label>
+			</div>
+			<div class="radio-toolbar" id="type">
+				<p >Type:</p>
+				<input type="radio" id="disc" name="type" value="disc" v-model="type">
+				<label for="disc">disc</label>
+			
+				<input type="radio" id="circle" name="type" value="circle" v-model="type">
+				<label for="circle">circle</label>
+	
+				<input type="radio" id="square" name="type" value="square" v-model="type">
+				<label for="square">square</label>
+	
+				<input type="radio" id="decimal" name="type" value="decimal" v-model="type">
+				<label for="decimal">decimal</label>
+	
+				<input type="radio" id="georgian" name="type" value="georgian" v-model="type">
+				<label for="georgian">georgian</label>
 
+				<input type="radio" id="custom" name="type" value="custom" v-model="type">
+				<label for="custom">custom</label>
+			</div>
+			<div class="radio-toolbar" id="image">
+				<p >Image:</p>
+				<input type="radio" id="none" name="img" value="0" v-model="imageIndex">
+				<label for="none">None</label>
+			
+				<input type="radio" id="rocket" name="img" value="1" v-model="imageIndex">
+				<label for="rocket">Rocket</label>
+	
+				<input type="radio" id="arrow" name="img" value="2" v-model="imageIndex">
+				<label for="arrow">Arrow</label>
+	
+				<input type="radio" id="grad" name="img" value="3" v-model="imageIndex">
+				<label for="grad">Linear Gradient</label>
+			</div>
+			<div id="customCounter">
+				<p>Custom Counter</p>
+				<div class="radio-toolbar" id="customSymbol">
+					<p>Symbol:</p>
+					<input type="radio" id="alpha" name="customSymbol" value="alpha" v-model="customSymbol" :disabled="disabled">
+					<label for="alpha">A B C D</label>
+				
+					<input type="radio" id="thumbs" name="customSymbol" value="thumbs" v-model="customSymbol" :disabled="disabled">
+					<label for="thumbs">Thumbs Up</label>
+		
+					<input type="radio" id="circled-alpha" name="customSymbol" value="circled-alpha" v-model="customSymbol" :disabled="disabled">
+					<label for="circled-alpha">Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ ...</label>
+				</div>
+				<div class="radio-toolbar" id="customSystem">
+					<p>System:</p>
+					<input type="radio" id="cyclic" name="customSystem" value="cyclic" v-model="customSystem" :disabled="disabled">
+					<label for="cyclic">cyclic</label>
+				
+					<input type="radio" id="numeric" name="customSystem" value="numeric" v-model="customSystem" :disabled="customSymbol == 'thumbs' || customSymbol == 'circled-alpha' || disabled">
+					<label for="numeric">numeric</label>
+		
+					<input type="radio" id="alphabetic" name="customSystem" value="alphabetic" v-model="customSystem" :disabled="customSymbol == 'thumbs' || customSymbol == 'circled-alpha' || disabled">
+					<label for="alphabetic">alphabetic</label>
+		
+					<input type="radio" id="symbolic" name="customSystem" value="symbolic" v-model="customSystem" :disabled="disabled">
+					<label for="symbolic">symbolic</label>
+
+					<input type="radio" id="fixed" name="customSystem" value="fixed" v-model="customSystem" :disabled="disabled">
+					<label for="fixed">fixed</label>
+				</div>
+				<div class="radio-toolbar" id="suffix">
+					<p>Suffix:</p>
+					<input type="radio" id="None" name="prefix" value="none" v-model="suffix" :disabled="disabled">
+					<label for="None">None</label>
+				
+					<input type="radio" id="paren" name="prefix" value="paren" v-model="suffix" :disabled="disabled">
+					<label for="paren">)</label>
+		
+					<input type="radio" id="line" name="prefix" value="line" v-model="suffix" :disabled="disabled">
+					<label for="line">|</label>
+				</div>
+			</div>
+
+			<details open>
+				<summary>CSS Code</summary>
+				<input type="textarea" :value="css" ref="code" readonly>
+				<button @click="copy">Copy</button>
+			</details>
+		</section>
+		<section id="list-section">
+			<h3>Course 6 Classes Taken</h3>
+			<ul id="list" :style="css">
+				<li>6.08: Interconnected-Embedded Systems</li>
+				<li>6.042: Mathematics for Computer Science</li>
+				<li>6.004: Computation Structures</li>
+				<li>6.006: Intro to Algorithms</li>
+				<li>6.009: Fundamentals of Programming</li>
+				<li>6.031: Software Construction</li> 
+				<li>6.033: Computer Systems Engineering</li> 
+				<li>6.036: Intro to Machine Learning</li> 
+				<li>6.046: Design and Analysis of Algorithms</li> 
+				<li>6.207: Networks</li> 
+				<li>6.819: Computer Vision</li> 
+			</ul>
+		</section>
+	</div>
 </body>
 </html>

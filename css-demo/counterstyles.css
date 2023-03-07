@@ -1,0 +1,205 @@
+/* ABCD */
+@counter-style alpha-cyclic {
+    system: cyclic;
+    symbols: A B C D;
+}
+
+@counter-style alpha-numeric {
+    system: numeric;
+    symbols: A B C D;
+}
+
+@counter-style alpha-alphabetic {
+    system: alphabetic;
+    symbols: A B C D;
+}
+
+@counter-style alpha-symbolic {
+    system: symbolic;
+    symbols: A B C D;
+}
+
+@counter-style alpha-fixed {
+    system: fixed;
+    symbols: A B C D;
+}
+
+/* ABCD) */
+@counter-style alpha-cyclic-paren {
+    system: cyclic;
+    symbols: A B C D;
+    suffix: ") ";
+}
+
+@counter-style alpha-numeric-paren{
+    system: numeric;
+    symbols: A B C D;
+    suffix: ") ";
+}
+
+@counter-style alpha-alphabetic-paren {
+    system: alphabetic;
+    symbols: A B C D;
+    suffix: ") ";
+}
+
+@counter-style alpha-symbolic-paren {
+    system: symbolic;
+    symbols: A B C D;
+    suffix: ") ";
+}
+
+@counter-style alpha-fixed-paren {
+    system: fixed;
+    symbols: A B C D;
+    suffix: ") ";
+}
+
+/* ABCD. */
+@counter-style alpha-cyclic-line {
+    system: cyclic;
+    symbols: A B C D;
+    suffix: "| ";
+}
+
+@counter-style alpha-numeric-line {
+    system: numeric;
+    symbols: A B C D;
+    suffix: "| ";
+}
+
+@counter-style alpha-alphabetic-line {
+    system: alphabetic;
+    symbols: A B C D;
+    suffix: "| ";
+}
+
+@counter-style alpha-symbolic-line {
+    system: symbolic;
+    symbols: A B C D;
+    suffix: "| ";
+}
+
+@counter-style alpha-fixed-line {
+    system: fixed;
+    symbols: A B C D;
+    suffix: "| ";
+}
+
+/* Thumbs */
+@counter-style thumbs-cyclic {
+    system: cyclic;
+    symbols: "\1F44D";
+}
+
+@counter-style thumbs-symbolic {
+    system: symbolic;
+    symbols:"\1F44D";
+}
+
+@counter-style thumbs-fixed {
+    system: fixed;
+    symbols: "\1F44D";
+}
+
+/* Thumbs) */
+@counter-style thumbs-cyclic-paren {
+    system: cyclic;
+    symbols: "\1F44D";
+    suffix: ") ";
+}
+
+@counter-style thumbs-symbolic-paren {
+    system: symbolic;
+    symbols:"\1F44D";
+    suffix: ") ";
+}
+
+@counter-style thumbs-fixed-paren {
+    system: fixed;
+    symbols: "\1F44D";
+    suffix: ") ";
+}
+
+/* Thumbs. */
+@counter-style thumbs-cyclic-line {
+    system: cyclic;
+    symbols: "\1F44D";
+    suffix: "| ";
+}
+
+@counter-style thumbs-symbolic-line {
+    system: symbolic;
+    symbols:"\1F44D";
+    suffix: "| ";
+}
+
+@counter-style thumbs-fixed-line {
+    system: fixed;
+    symbols: "\1F44D";
+    suffix: "| ";
+}
+
+/* Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ */
+@counter-style circled-alpha-cyclic {
+    system: cyclic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+}
+
+@counter-style circled-alpha-numeric {
+    system: numeric;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+}
+
+@counter-style circled-alpha-alphabetic {
+    system: alphabetic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+}
+
+@counter-style circled-alpha-symbolic {
+    system: symbolic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+}
+
+@counter-style circled-alpha-fixed {
+    system: fixed;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+}
+
+/* Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ ) */
+@counter-style circled-alpha-cyclic-paren {
+    system: cyclic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: ") ";
+}
+
+@counter-style circled-alpha-symbolic-paren {
+    system: symbolic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: ") ";
+}
+
+@counter-style circled-alpha-fixed-paren {
+    system: fixed;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: ") ";
+}
+
+/* Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ | */
+@counter-style circled-alpha-cyclic-line {
+    system: cyclic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: "| ";
+}
+
+@counter-style circled-alpha-symbolic-line {
+    system: symbolic;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: "| ";
+}
+
+@counter-style circled-alpha-fixed-line {
+    system: fixed;
+    symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+    suffix: "| ";
+}
