@@ -18,7 +18,7 @@ body {
 
 #list-section {
     padding-left: 30px;
-    width: 30%;
+    width: 27%;
 }
 
 #list-section > ul {
@@ -118,15 +118,20 @@ details input {
 #code p {
     margin: 0px;
 }
-  
-*:disabled + label {
+
+#customCounter .radio-toolbar input[type="radio"]:disabled + label {
+    background-color: dimgrey;
+    border-color: black;
+    color: linen;
+    opacity: 1;
+}
+
+#customCounter .radio-toolbar input[type="radio"]:disabled:hover + label {
     background-color: dimgrey;
     color: linen;
     opacity: 1;
 }
 
-*:disabled:hover {
-    background-color: dimgrey;
-    color: linen;
-    opacity: 1;
+#customCounter > p {
+    color: rgb(68, 129, 204);
 }
